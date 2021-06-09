@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" 
+  rel="stylesheet"
+  integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" 
+  crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;1,400&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/28e320bd10.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <link href="src/stylzz.css" rel="stylesheet" type="text/css">
+  <title>Weather App</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="clearfix">
+        <div style="float: right;">
+          <form id="search-city">
+            <input 
+            class="textbox" 
+            type="text" 
+            placeholder="Search city"
+            autofocus="on"
+            id="city-input"
+            />
+            <input 
+            class="searchbutton" 
+            type="submit" 
+            value="Search"
+            />
+          </form>
+          <button id="current-button">
+            Current
+          </button>
+        </div>
+        <div class="float: left;">
+          <h1 id="location">
+            <strong>Porto</strong>
+          </h1>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="row">
+        <div class="col-4">
+            <img class="pic" src="img/porto_pic.jpg" alt="porto pic"/>
+          </div>
+          <div class="col-5">
+            <div class="current">
+              <h3 id="current-time">
+                Sunday
+              </h3>
+              <br/>
+            <h2>
+              <span class="temperature">
+                <img src="img/sunny.png" alt="sun" width="75px"/>
+                &nbsp
+                <span id="temp">
+                  12
+                </span> 
+                <span class="units">
+                  <a href="#" id="celsius">
+                    ºC
+                  </a>
+                  | 
+                  <a href="#" id="fsmth">
+                    ºF
+                  </a>
+                </span>
+              </span>
+            </h2>
+            <br/>
+            <h4>
+              Humidity: <span id="humidity">61</span>%
+              <br/>
+              Wind: <span id="wind">18</span>km/h
+            </h4>
+            </div>
+          </div>
+          <div class="col-3">
+            <ul>
+              <li>
+                <span>Mon</span> 
+                &nbsp
+                <img src="img/sunny.png" alt="sun" width="40px" />
+                &nbsp
+                <strong>18ºC</strong>
+              </li>
+              <li>
+                <span>Thu</span> 
+                &nbsp
+                <img src="img/sunny.png" alt="sun" width="40px" />
+                &nbsp
+                <strong>17ºC</strong>
+              </li>
+              <li>
+                <span>Wed</span> 
+                &nbsp
+                <img src="img/cloudy.png" alt="sun" width="40px" />
+                &nbsp
+                <strong>15ºC</strong>
+              </li>
+              <li>
+              <span>Tue</span> 
+              &nbsp
+              <img src="img/cloudy.png" alt="sun" width="40px" />
+              &nbsp
+              <strong>15ºC</strong>
+              </li>
+              <li>
+              <span>Fri</span> 
+              &nbsp
+              <img src="img/cloudy.png" alt="sun" width="40px" />
+              &nbsp
+              <strong>16ºC</strong>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+<script src="src/script.js"></script>
+</body>
+</html>
