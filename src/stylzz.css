@@ -48,11 +48,16 @@ a {
   text-decoration: none;
 }
 
+footer {
+  margin: 0 auto;
+  font-size: 11px;
+}
+
 .container{
   border: 3px solid rgba(128, 128, 128, 0.816);
   border-radius: 5px;
   padding: 20px 30px;
-  margin: 50px auto;
+  margin: 50px auto 0 auto;
   max-width: 1000px;
   background-image: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
 }
